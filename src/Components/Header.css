@@ -1,0 +1,219 @@
+.header {
+    background: var(--neutral-white, #FFF);
+    box-shadow: 0px 4px 6px 0px rgba(245, 245, 245, 0.69);
+    display: flex;
+    width: 100dvw;
+    height: 5.25rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo img {
+    width: 4.75rem;
+    height: 4.75rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active{
+    border:none;
+}
+
+.logo h2 {
+    color: var(--neutralrealneutral-2, #303238);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 1.875rem */
+}
+
+.links {
+    display: flex;
+    width: 26.94rem;
+    padding-top: 0.5rem;
+    padding-right: 3.75rem;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.56rem;
+}
+
+.link {
+    color: var(--neutralrealneutral-2, #303238);
+    /* H4 REAL */
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 1.40625rem */
+    cursor: pointer;
+
+    
+    --c: #4F95C7; /* the color */
+    --s: .15em;
+    
+    line-height:1.1em;
+    padding-bottom: calc(2.1*var(--s));
+    background: 
+      conic-gradient(from 135deg at top,var(--c) 90deg,#0000 0) 
+        left 0 bottom var(--s)/calc(2*var(--s)) var(--s) repeat-x,
+      conic-gradient(from -45deg at bottom,var(--c) 90deg,#0000 0) 
+        left var(--s) bottom 0/calc(2*var(--s)) var(--s) repeat-x;
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0) 0/var(--_p,0%) padding-box no-repeat;
+    transition: .5s;
+}
+
+.link:hover {
+    --_p: 100%;
+    color: var(--c);
+}
+
+
+
+
+
+
+.burger-menu {
+    height: 35px;
+    width: 35px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-right: 6rem;
+    padding-left: 1rem;
+}
+
+.burger-bar {
+    width: 35px;
+    height: 5px;
+    background-color: #303238;
+    border-radius: 5px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    z-index: 40;
+    background-color: white;
+    padding-top: 120px;
+    transition: 0.4s;
+}
+
+.mobile-link {
+    color: var(--neutralrealneutral-2, #303238);
+    /* H4 REAL */
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 1.40625rem */
+    cursor: pointer;
+
+    --c: #4F95C7; /* the color */
+    --s: .15em;
+    
+    line-height:1.1em;
+    padding-bottom: calc(2.1*var(--s));
+    background: 
+      conic-gradient(from 135deg at top,var(--c) 90deg,#0000 0) 
+        left 0 bottom var(--s)/calc(2*var(--s)) var(--s) repeat-x,
+      conic-gradient(from -45deg at bottom,var(--c) 90deg,#0000 0) 
+        left var(--s) bottom 0/calc(2*var(--s)) var(--s) repeat-x;
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0) 0/var(--_p,0%) padding-box no-repeat;
+    transition: .5s;
+}
+
+.mobile-link:hover {
+    --_p: 100%;
+    color: var(--c);
+}
+
+/* ------------- sliding menu ------------------ */
+.hidden {
+    right: -100%;
+}
+
+.visible {
+    right: 0;
+}
+
+/* ----- animations--------- */
+/* clicked */
+.burger-bar.clicked:nth-child(1){
+    transform: rotate(-45deg) translate(-10px, 6px);
+    transition: ease-out 0.3s;
+}
+
+.burger-bar.clicked:nth-child(2){
+    transform: scale(0.01);
+    transition: ease-out 0.3s;
+}
+
+.burger-bar.clicked:nth-child(3){
+    transform: rotate(45deg) translate(-15px, -10px);
+    transition: ease-out 0.3s;
+}
+
+/* unclicked */
+.burger-bar.unclicked {
+    transition: rotate(0.175, 0.885, 0.32, 1.275) 0.3s;
+    transition: ease-out 0.3s;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .logo img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .logo h2 {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .burger-menu {
+        display: flex;
+    }
+    .links {
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .burger-menu {
+        padding-right: 4rem;
+    }
+}

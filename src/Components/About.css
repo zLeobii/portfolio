@@ -1,0 +1,296 @@
+.about {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100dvw;
+    height: 105rem;
+    gap: 6rem;
+}
+
+.aboutreal {
+    display: flex;
+    width: fit-content;
+    height: 26.68rem;
+    padding: 9.38rem 6.25rem 0rem 6.25rem;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF;
+}
+
+.aboutme {
+    display: flex;
+    height: 15.25rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.aboutme h2 {
+    color: var(--neutralrealneutral-2, #303238);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 2.5rem */
+    overflow-y: hidden;
+}
+
+.aboutme p {
+    color: var(--neutralrealneutral-3, #454647);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.875rem */
+    overflow-y: hidden;
+}
+
+.skillpage {
+    display: flex;
+    width: 53rem;
+    height: 62rem;
+    padding: 0rem 3.52rem;
+    justify-content: center;
+    align-items: center;
+    gap: 7.03rem;
+    border-radius: 1.88rem;
+    border: 1px solid var(--primaryrealbluemain-1, #1967B9);
+    background: var(--primaryrealbluemain-3, #EAF9FF);
+    overflow-y: hidden;
+}
+
+.developer {
+    display: flex;
+    width: 12.5rem;
+    padding: 5rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.88rem;
+    align-self: stretch;
+}
+
+.topdeveloper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.37rem;
+    align-self: stretch;
+}
+
+.developerlogo {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.topdeveloper h3 {
+    align-self: center;
+    color: var(--neutralrealneutral-1, #141924);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 1.875rem */
+}
+
+.middledeveloper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.81rem;
+    align-self: stretch;
+}
+
+.bottomdeveloper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.81rem;
+    align-self: stretch;
+}
+
+.line {
+    background: #1967B9;
+    width: 0.0625rem;
+    height: 62.06rem;
+}
+
+.designer {
+    display: flex;
+    width: 12.5rem;
+    padding: 5rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.88rem;
+    align-self: stretch;
+}
+
+.topdesigner {
+    display: flex;
+    padding: 0.13rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.37rem;
+    align-self: stretch;
+}
+
+.designerlogo {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.topdesigner h3 {
+    align-self: stretch;
+    color: var(--neutralrealneutral-1, #141924);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 1.875rem */
+}
+
+.middledesigner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.81rem;
+    align-self: stretch;
+}
+
+.bottomdesigner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.81rem;
+    align-self: stretch;
+}
+
+.abouth6 {
+    align-self: stretch;
+    color: var(--neutralrealneutral-2, #303238);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.13rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 1.6875rem */
+}
+
+.aboutp {
+    align-self: stretch;
+    color: var(--neutralrealneutral-3, #454647);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.13rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.6875rem */
+}
+
+.line2 {
+    display: none;
+    width: 100%;
+    height: 0.0625rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .aboutreal {
+        height: 32rem;
+    }
+
+    .aboutme {
+        height: 32rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .about {
+        gap: 3rem;
+        height: 160rem;
+    }
+    
+    .aboutreal {
+        height: 32rem;
+        padding: 4rem 3.25rem 0rem 3.25rem;
+    }
+
+    .aboutme {
+        height: 32rem;
+    }
+
+    .aboutme h2 {
+        font-size: 1.75rem;
+    }
+
+    .aboutme p {
+        font-size: 1.1rem;
+    }
+
+    .skillpage {
+        flex-direction: column;
+        height: 115rem;
+        width: 80%;
+        padding: 0rem 0rem;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .developer {
+        width: 100%;
+        padding: 2rem 0rem;
+        gap: 5.88rem;
+        padding: 0rem 3.52rem;
+    }
+
+    .designer {
+        width: 100%;
+        padding: 2rem 0rem;
+        gap: 5.88rem;
+        padding: 0rem 3.52rem;
+    }
+
+    .line2 {
+        display: inherit;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .aboutreal {
+        height: 50rem;
+        padding: 4rem 3.25rem 0rem 3.25rem;
+    }
+
+    .aboutme {
+        height: 50rem;
+    }
+    .about {
+        gap: 3rem;
+        height: 175rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .about {
+        gap: 3rem;
+        height: 195rem;
+    }
+
+    .skillpage {
+        height: 125rem;
+    }
+
+    .aboutreal {
+        height: 60rem;
+        padding: 4rem 3.25rem 0rem 3.25rem;
+    }
+
+    .aboutme {
+        height: 60rem;
+    }
+}

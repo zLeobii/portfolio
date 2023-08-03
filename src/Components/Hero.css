@@ -1,0 +1,351 @@
+.home {
+    background: #F5F5F5;
+    width: 100dvw;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15rem;
+    gap: 6.25rem;
+    height: 100dvh;
+}
+
+.coolimage {
+    width: 53rem;
+    height: 21rem;
+}
+
+.colimage {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4.81rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.maincopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.realmaincopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.realmaincopy h1 {
+    color: var(--neutralrealneutral-1, #141924);
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.44rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 4.29688rem */
+}
+
+.realmaincopy p {
+    color: var(--neutralrealneutral-3, #454647);
+    font-family: "Inter", sans-serif;
+    font-size: 1.56rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 2.34375rem */
+}
+
+.linksreal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.linkreal {
+    display: flex;
+    width: 2.31rem;
+    height: 2.31rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.topimg {
+    position: absolute;
+    transition: ease-in 0.2s all;
+    overflow-y: hidden;
+}
+
+.topimg:hover {
+    opacity: 0;
+    transition: ease-in 0.2s all;
+}
+
+.pfp {
+    display:flex;
+    width: 22rem;
+    height: 22rem;
+    align-self: stretch;
+    justify-content: stretch;
+}
+
+.pfp2 {
+    display:none;
+    width: 17rem;
+    height: 17rem;
+}
+
+.myskills {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.6rem;
+    padding-top: 6.5rem;
+}
+
+.myskills h4 {
+    color: var(--neutralrealneutral-2, #303238);
+    font-family: "Inter", sans-serif;
+    font-size: 1.44rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 2.15625rem */
+    width: max-content;
+}
+
+.skill {
+    width: 4.06rem;
+    height: 4.06rem;
+    cursor: pointer;
+}
+
+.namee {
+    display: flex;
+    width: 5.13rem;
+    height: 1.1875rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+}
+
+.profile {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    overflow-y: hidden;
+    width: 5.13rem;
+    height: 6.1rem;
+  }
+
+  .profilee {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    overflow-y: hidden;
+    width: 5.13rem;
+    height: 6.1rem;
+  }
+  
+.profilee:hover {
+    transform: translateY(-1.5rem);
+    .namee {
+        opacity: 1;
+        transform: translateY(2.5rem);
+    }
+  }
+
+.namee {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+.namee::before {
+    position: absolute;
+}
+
+.skill1 {
+    display: none;
+}
+
+.skill2 {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .pfp {
+        display:flex;
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .maincopy {
+        width: 40rem;
+    }
+
+    .main {
+        gap: 2rem;
+    }
+
+    .realmaincopy p {
+        font-size: 1.12rem;
+    }
+
+    .realmaincopy h1 {
+        font-size: 3rem;
+    }
+
+    .myskills {
+        gap: 0rem;
+    }
+
+    .myskills h4 {
+        font-size: 1rem;
+    }
+
+    .skill {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .coolimage {
+        width: 48rem;
+        height: 19rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hero {
+        padding-top: 9rem;
+        height: 100%;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .realmaincopy {
+        justify-content: center;
+        align-items:center;
+        width: 100%;
+    }
+
+    .realmaincopy p {
+        font-size: 1.2rem;
+        text-align: center;
+        width: 27rem;
+    }
+
+    .realmaincopy h1 {
+        font-size: 2.3rem;
+        text-align: center;
+        width: fit-content;
+        width: 27rem;
+    }
+
+    .maincopy {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        align-items: center;
+        gap: 3rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .pfp {
+        display: none;
+    }
+
+    .pfp2 {
+        display: inherit;
+    }
+
+    .myskills {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .namee {
+        display:none;
+    }
+
+    .profile {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .myskills h4 {
+        font-size: 1.2rem;
+        overflow-y: hidden;
+    }
+
+    .skill {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .profile:hover {
+        transform: translateY(0);
+        .namee {
+            opacity: 0;
+            transform: translateY(0);
+        }
+      }
+
+      .skill1 {
+        display: flex;
+      }
+
+      .skill2 {
+        display: flex;
+      }
+
+      .profilee {
+        display: none;
+      }
+
+      .coolimage {
+        width: 32rem;
+        height: 12rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .maincopy {
+        width: 100%;
+    }
+
+    .realmaincopy p {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .realmaincopy h1 {
+        font-size: 2.3rem;
+        width: 100%;
+    }
+
+    .coolimage {
+        width: 100%;
+        height: 10rem;
+    }
+}

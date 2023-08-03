@@ -1,0 +1,314 @@
+.projects {
+    background: var(--neutralrealneutral-9, #F5F5F5);
+    display: flex;
+    width: 100dvw;
+    height: 51.81rem;
+    padding: 6.25rem 6.25rem 3.13rem 6.25rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.projectcopy {
+    display: flex;
+    width: 74.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding-left: 2rem;
+}
+
+.projectcopy h2{
+    align-self: stretch;
+    color: var(--neutralrealneutral-2, #303238);
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 2.5rem */
+}
+
+.projectcopy p{
+    align-self: stretch;
+    color: var(--neutralrealneutral-3, #454647);
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.875rem */
+}
+
+.jobcards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.25rem;
+    width: 100%;
+}
+
+.jobcard {
+    display: flex;
+    width: 70rem;
+    padding: 1.875rem;
+    align-items: center;
+    gap: 3.125rem;
+    border-radius: 2.5rem;
+    background: #FFF;
+    border: 1px solid var(--primaryrealbluemain-1, #1967B9);
+}
+
+.jobimage1 {
+    width: 37.5rem;
+    height: 25rem;
+    border-radius: 1.88rem;
+    background: var(--primaryrealbluemain-3, #EAF9FF);
+}
+
+.jobcardcopy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.13rem;
+    flex: 1 0 0;
+}
+
+.cardcopy {
+    display:flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 13.01rem;
+    gap: 1.75rem;
+}
+
+.cardcopy h5{
+    color: var(--neutralrealneutral-1, #141924);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 1.875rem */
+}
+
+.cardcopy p{
+    color: var(--neutralrealneutral-3, #454647);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.875rem */
+}
+
+.cardlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.88rem;
+}
+
+.ongithub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.ongithub h4{
+    color: var(--neutralrealneutral-3, #454647);
+    text-align: center;
+    
+    /* H3 REAL */
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 1.875rem */
+}
+
+.livedemo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.livedemo h4{
+    color: var(--neutralrealneutral-3, #454647);
+    text-align: center;
+    
+    /* H3 REAL */
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 1.875rem */
+}
+
+.link2 {
+    display: flex;
+    width: 2.63rem;
+    height: 2.63rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.topimg1 {
+    position: absolute;
+    transition: ease-in 0.2s all;
+    overflow-y: hidden;
+    opacity: 0;
+    width: 2.63rem;
+    height: 2.63rem;
+}
+
+.topimg2 {
+    position: absolute;
+    transition: ease-in 0.2s all;
+    overflow-y: hidden;
+    opacity: 0;
+    width: 2.63rem;
+    height: 2.63rem;
+}
+
+
+.moment1 {
+    transition: ease-in 0.2s all;
+}
+
+.moment2 {
+    transition: ease-in 0.2s all;
+}
+
+.ongithub:hover {
+    .moment1 {
+        color: #4F95C7;
+        transition: ease-in 0.2s all;
+    }
+
+    .topimg1 {
+        opacity: 1;
+        transition: ease-in 0.2s all;
+    }
+}
+
+.livedemo:hover {
+    .moment2 {
+        color: #4F95C7;
+    }
+
+    .topimg2 {
+        opacity: 1;
+        transition: ease-in 0.2s all;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .projectcopy {
+        width: 56rem;
+    }
+
+    .projects {
+        padding: 10rem 0rem 3.13rem 0rem;
+    }
+
+    .jobcard {
+        width: 52rem;
+        padding: 1.2rem;
+        gap: 1.5rem;
+    }
+
+    .jobimage1 {
+        width: 30rem;
+        height: 17.5rem;
+    }
+
+    .cardcopy {
+        height: 12rem;
+    }
+    
+    .cardcopy h5{
+        font-size: 1.5rem;
+    }
+    
+    .cardcopy p{
+        font-size: 1.1rem;
+    }
+    
+    .cardlinks {
+        gap: 1.5rem;
+    }
+    
+    .ongithub h4{
+        font-size: 1.15rem;
+    }
+ 
+    .livedemo h4{
+        font-size: 1.15rem;
+    }
+
+    .topimg1 {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .topimg2 {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    #github {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #livedemo {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .jobcardcopy {
+        gap: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .jobcard {
+        flex-direction: column;
+        width: 80%;
+        height: 33rem;
+    }
+
+    .jobimage1 {
+        width: 24rem;
+        height: 11.5rem;
+    }
+
+    .jobcardcopy {
+        gap: 0rem;
+    }
+
+    .projectcopy {
+        width: 100%;
+    }
+
+    .projects {
+        height: 60rem;
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .jobimage1 {
+        width: 18.5rem;
+        height: 6rem;
+    }
+
+    .jobcard {
+        height: 25rem;
+    }
+}
