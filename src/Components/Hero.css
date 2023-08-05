@@ -262,6 +262,7 @@
     .maincopy {
         justify-content: center;
         align-items: center;
+        padding-bottom: 6rem;
     }
 
     .main {

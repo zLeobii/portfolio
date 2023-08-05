@@ -19,10 +19,10 @@
 .goup {
     display: flex;
     width: 100dvw;
-    height: 1.845;
+    height: 1.845rem;
     padding: 0rem 20rem 1.845rem 62.5rem;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
     background: var(--neutralrealneutral-2, #303238);
 }
 

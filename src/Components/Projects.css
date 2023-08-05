@@ -311,4 +311,8 @@
     .jobcard {
         height: 25rem;
     }
+
+    .cardlinks {
+        gap: 0.5rem;
+    }
 }

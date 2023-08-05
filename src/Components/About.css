@@ -209,7 +209,7 @@
 
 @media only screen and (max-width: 900px) {
     .about {
-        gap: 3rem;
+        gap: 0rem;
         height: 160rem;
     }
     
@@ -219,7 +219,7 @@
     }
 
     .aboutme {
-        height: 32rem;
+        height: 100%;
     }
 
     .aboutme h2 {
@@ -270,14 +270,12 @@
         height: 50rem;
     }
     .about {
-        gap: 3rem;
         height: 175rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .about {
-        gap: 3rem;
         height: 195rem;
     }
 
